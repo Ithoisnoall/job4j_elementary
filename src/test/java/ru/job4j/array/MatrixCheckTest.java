@@ -28,15 +28,4 @@ public class MatrixCheckTest {
         boolean result = MatrixCheck.monoHorizontal(input, 1);
         assertThat(result, is(false));
     }
-
-    @Test
-    public void whenHasMonoHorizontalY() {
-        char[][] input = {
-                {'Y', 'Y', 'Y'},
-                {' ', ' ', ' '},
-                {' ', ' ', ' '},
-        };
-        boolean result = MatrixCheck.monoHorizontal(input, 0);
-        assertThat(result, is(false));
-    }
 }
