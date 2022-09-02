@@ -3,9 +3,8 @@ package ru.job4j.array;
 public class Matrix {
     public static int[][] multiple(int size) {
         int[][] array = new int[size][size];
-        int i, j;
-        for (i = 0; i < array.length; i++) {
-            for (j = 0; j < array[i].length; j++) {
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
                 array[i][j] = (i + 1) * (j + 1);
             }
         }
